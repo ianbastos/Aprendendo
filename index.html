@@ -2,25 +2,39 @@
 <html>
 <head>
 <style>
+html {
+background-color: #00539f;
+}
 h2 {
-  color: rgb(173, 55, 16);
-  width: fit-content;
-  height: fit-content;
-  border: 1px solid rgb(12, 12, 12);
-  font-size: 100px;
-  font-family: "Jersey 10 Charted", sans-serif;
-  font-weight: 200;
-  font-style: normal;
+ color: rgb(173, 55, 16);
+ width: fit-content;
+ background-color: #88a58c;
+ height: fit-content;
+ border: 1px solid rgb(12, 12, 12);
+ font-size: 250%;
+ font-family: "Jersey 10 Charted", sans-serif;
+ font-weight: 10;
+ font-style: normal;
+ text-shadow: 2px 2px 1px black;
 }
 h1:hover, p:hover, a.hover {
-    color: red;
+  color: red;
   width: fit-content;
   height: fit-content;
-  border: 2px solid black;
+  border: 1px solid black;
   font-family: "Berkshire Swash", serif;
-  font-weight: 400;
+  font-weight: 10;
   font-size: x-large;
   font-style: normal;
+}
+body { width: 600px;
+  margin: 0 auto;
+  background-color: #d2cae0;
+  padding: 0 100px 100px 100px;
+  border: 5px solid black;}
+  img {
+  display: block;
+  margin: 0 auto;
 }
 </style>
 <link href="https://fonts.googleapis.com/css2?family=Jersey+10+Charted&display=swap" rel="stylesheet">
@@ -33,7 +47,9 @@ h1:hover, p:hover, a.hover {
 <a href="copiarcolarlayout.html">Clique aqui pra ir pro primeiro layout</a>
 <hr>
 <button type="button" ><a href="template/template-demo.html">Clique aqui pra ir pro template</a></button>
+<hr>
 <h2> Primeira lista</h2>
+<hr>
 <ul style="list-style-type: square">
 <li>item 1 </li>
  <ol type="a">
@@ -47,8 +63,8 @@ h1:hover, p:hover, a.hover {
 </ul>
 <p>clique na imagem para ir para outra lista</p>
 <hr>
-<a href="#outralista"><img src="imagens/cinestoico.jpg" width="900px" height="900px" style="float: left;"></a>
-<h1> Imagem do cinestoico</h1>
+<a href="#outralista"><img src="imagens/cinestoico.jpg" width="500px" height="500px"></a> 
+<h1>cinestoico</h1>
 <p style="clear:both"> </p>
 <hr>
 <h2 id="outralista"> Outra lista</h2>
@@ -66,5 +82,6 @@ h1:hover, p:hover, a.hover {
 <button type="button" ><a href="#primeira">Voltar para primeira lista</a></button>
 <hr>
 <hr>
-    </body>
+<script src="scripts/main.js"></script>
+</body>
 </html>
