@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> usuário page</title>
+</head>
+<body>
+ <h1> Bem Vindo </h1>
+<hr>
+ <button>Alterar usuário</button>
+ <hr>
+ <a style="padding: 10%;" href="index.html">Clica aqui pra voltar</a>
+ <hr>
+ <script src="scripts/trocausuario.js"></script>
+</body>
+</html>
