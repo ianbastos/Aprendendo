@@ -1,9 +1,9 @@
 //Import the THREE.js library
-import * as THREE from "https://cdn.skypack.dev/three@0.129.0/build/three.module.js";
+import * as THREE from 'https://cdn.skypack.dev/three@0.136.0';
 // To allow for the camera to move around the scene
-import { OrbitControls } from "https://cdn.skypack.dev/three@0.129.0/examples/jsm/controls/OrbitControls.js";
+import { OrbitControls } from 'https://cdn.skypack.dev/three@0.136.0/examples/jsm/controls/OrbitControls.js';
 // To allow for importing the .gltf file
-import { GLTFLoader } from "https://cdn.skypack.dev/three@0.129.0/examples/jsm/loaders/GLTFLoader.js";
+
 
 class BasicWorldDemo {
   constructor() {
@@ -70,9 +70,16 @@ class BasicWorldDemo {
     ]);
     this._scene.background = texture;
     
-   
-
-    this._RAF();
+    const plane = new THREE.Mesh(
+      new THREE.PlaneGeometry(100, 100, 10, 10),
+      new THREE.MeshStandardMaterial({
+          color: 0xFFFFFF,
+        }));
+  plane.castShadow = false;
+  plane.receiveShadow = true;
+  plane.rotation.x = -Math.PI / 2;
+  this._scene.add(plane);
+     this._RAF();
   }
 
   _OnWindowResize() {
